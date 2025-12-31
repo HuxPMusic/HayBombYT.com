@@ -1,181 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HayBombYT | Contact</title>
-  <meta name="description" content="HayBombYT.com - official site for videos, projects, and archives." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact</title>
+  <meta property="og:title" content="Contact">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/preview.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/preview.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#content">Skip to content</a>
+<a class="skip-link" href="#content">Skip to main content</a>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand" aria-label="Site brand">
-        <span class="dot" aria-hidden="true"></span>
-        <div>
-          <div class="brand-title">HayBombYT</div>
-          <div class="brand-sub">odd topics, projects, and updates</div>
-        </div>
-      </div>
-
-      <div class="topbar-actions">
-        <div class="pill" title="Last updated">
-          <span>Last updated:</span>
-          <strong data-clock>...</strong>
-        </div>
-        <button class="btn" type="button" data-theme-toggle aria-pressed="false">Dark mode</button>
-      </div>
-    </div>
+<main id="main">
+  <header class="masthead" aria-label="Site masthead">
+    <img src="assets/img/logo.png" alt="HayBombYT" decoding="async" fetchpriority="high">
+    <nav class="topnav" aria-label="Site navigation">
+      <a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="container" id="content">
-    <div class="layout">
+  <div class="columns" id="content">
+    <section class="content-left" aria-label="Main">
+      <article class="card">
+        <h3 style="white-space:pre-wrap;">HayBombYT.com, the official website for Safranek Bentz's projects.</h3>
+      </article>
 
-      <aside class="window">
-        <div class="window-title">
-          <h2>Navigation</h2>
-          <span class="small">v1.0</span>
-        </div>
-        <div class="window-body">
-          <nav class="nav" aria-label="Primary">
-            <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html" aria-current="page">Contact</a>
-          </nav>
+      <article class="card">
+        <p class="" style="white-space:pre-wrap;"><strong>Explore</strong></p>
+        <ul class="link-list">
+          <li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+        </ul>
+      </article>
+    </section>
 
-          <hr class="sep" />
+    <section class="content-right" aria-label="Links">
+      <article class="card">
+        <p class="" style="white-space:pre-wrap;"><strong>Social Links</strong></p>
+        <ul class="link-list">
+          <li><a href="https://bsky.app/profile/haybombyt.com" target="_blank" rel="noopener">Bluesky</a></li>
+<li><a href="https://discord.com/invite/TSD34bRjZU" target="_blank" rel="noopener">Discord</a></li>
+<li><a href="https://www.instagram.com/haybombyt/" target="_blank" rel="noopener">Instagram</a></li>
+<li><a href="https://spacehey.com/haybombyt" target="_blank" rel="noopener">SpaceHey</a></li>
+        </ul>
+      </article>
 
-          <div class="kicker">Quick links</div>
-          <ul class="list" style="margin-top:10px">
-            <li><a href="https://www.youtube.com/HayBombYT" target="_blank" rel="noopener">YouTube channel</a><div class="small">youtube.com/HayBombYT</div></li>
-            <li><a href="https://bsky.app/profile/haybombyt.com" target="_blank" rel="noopener">Bluesky</a><div class="small">@haybombyt.com</div></li>
-            <li><a href="#" onclick="return false;">HayBombTV archive</a><div class="small">Optional</div></li>
-          </ul>
-        </div>
-      </aside>
-
-      
-<section class="window">
-  <div class="window-title">
-    <h2>Contact</h2>
-    <span class="small">say hi</span>
+      <article class="card">
+        <p>Sign up with your email address to receive news and updates.</p>
+        <form class="newsletter" action="mailto:haybombproductions@gmail.com" method="post" enctype="text/plain">
+          <div>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Email Address" required>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </article>
+    </section>
   </div>
-  <div class="window-body">
 
-    <div class="card">
-      <div class="kicker">Reach out</div>
-      <h1 class="h1" style="margin-top:8px">For collabs, questions, or site stuff.</h1>
-      <p style="color: var(--muted); margin:0">
-        This form is frontend-only. It can open an email draft on your device, or you can replace it with a Google Form.
-      </p>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-inner">
+      <div>HayBombYT</div>
+      <div><a href="https://www.youtube.com/HayBombYT" target="_blank" rel="noopener">YouTube</a></div>
     </div>
+  </footer>
+</main>
 
-    <hr class="sep" />
-
-    <form class="form card" id="contactForm">
-      <div class="row">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
-        </div>
-        <div>
-          <label for="reply">Your email (optional)</label>
-          <input id="reply" name="reply" type="email" autocomplete="email" placeholder="you@example.com" />
-        </div>
-      </div>
-
-      <label for="msg">Message</label>
-      <textarea id="msg" name="msg" placeholder="Type your message..." required></textarea>
-
-      <div style="display:flex; gap:10px; align-items:center; margin-top:12px; flex-wrap:wrap;">
-        <button class="btn" type="submit">Open email draft</button>
-        <a class="btn" href="https://bsky.app/profile/haybombyt.com" target="_blank" rel="noopener" style="text-decoration:none;">Bluesky profile</a>
-        <span class="small">No data is stored by this site.</span>
-      </div>
-    </form>
-
-    <div class="note" style="margin-top:12px">
-      Your message will open an email draft addressed to <strong>haybombproductions@gmail.com</strong>.
-    </div>
-
-  </div>
-</section>
-
-
-      <aside class="window">
-        <div class="window-title">
-          <h2>Sidebar</h2>
-          <span class="small">88x31 ready</span>
-        </div>
-        <div class="window-body">
-          <div style="display:flex; gap:12px; align-items:center;">
-            <img class="pfp" src="assets/img/profile.jpg" alt="Profile photo" />
-            <div>
-            </div>
-          </div>
-
-          <hr class="sep" />
-
-          <div class="kicker">Link me</div>
-          <a class="button-link" href="assets/img/haybomyt_88x31.png">
-            <img src="assets/img/haybomyt_88x31.png" width="88" height="31" alt="HayBombYT 88x31 button" />
-            <div>
-              <div style="font-family:var(--font2); font-weight:800; text-transform:uppercase; font-size:12px;">HayBombYT 88x31</div>
-              <small>Use this on your friends pages</small>
-            </div>
-          </a>
-
-          <div class="badge-row" aria-label="Buttons">
-            <img src="assets/img/haybomyt_88x31.png" alt="HayBombYT button" />
-            <img src="assets/img/haybomyt_88x31.png" alt="HayBombYT button duplicate placeholder" />
-            <img src="assets/img/haybomyt_88x31.png" alt="HayBombYT button duplicate placeholder" />
-          </div>
-
-          <hr class="sep" />
-
-          <div class="kicker">Message</div>
-          <div class="marquee" aria-label="Site message"><span data-marquee>Welcome!</span></div>
-
-          <div class="footer" style="margin-top:14px">
-            © <span id="year"></span> HayBombYT. Built as a static site.
-
-          </div>
-        </div>
-      </aside>
-
-    </div>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="assets/js/site.js"></script>
-
-  <script>
-    (function(){
-      const form = document.getElementById('contactForm');
-      if (!form) return;
-      const TO = "haybombproductions@gmail.com";
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const reply = document.getElementById('reply').value.trim();
-        const msg = document.getElementById('msg').value.trim();
-        const subject = encodeURIComponent("HayBombYT.com message from " + (name || "someone"));
-        const body = encodeURIComponent(
-          (msg || "") +
-          "\n\n---\n" +
-          "Name: " + (name || "") + "\n" +
-          "Reply-to: " + (reply || "") + "\n" +
-          "Sent from: HayBombYT.com"
-        );
-        window.location.href = "mailto:" + TO + "?subject=" + subject + "&body=" + body;
-      });
-    })();
-  </script>
 </body>
 </html>
-
