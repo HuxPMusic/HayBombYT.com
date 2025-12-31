@@ -205,3 +205,42 @@ main{
 a{ color:var(--link); }
 a:visited{ color:var(--link-visited); }
 a:hover{ text-decoration:underline; }
+
+
+/* utility */
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+.hero{
+  width:100%;
+  height:auto;
+  display:block;
+  border:2px solid #000080;
+  box-shadow:2px 2px 0 #000000;
+  margin:6px 0 10px;
+}
+
+.button{
+  display:inline-block;
+  padding:6px 10px;
+  border:2px solid #000080;
+  background:#ffccff;
+  color:#000000;
+  text-decoration:none;
+  box-shadow:2px 2px 0 #000000;
+  font-weight:bold;
+}
+
+.button:active{
+  transform:translate(1px,1px);
+  box-shadow:1px 1px 0 #000000;
+}
