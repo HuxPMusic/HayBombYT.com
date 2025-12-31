@@ -177,6 +177,19 @@ main{
   font-size:12px;
 }
 
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.footer-sep{
+  color:#ffffff;
+  opacity:0.9;
+}
+
 .footer-inner a{ color:#ffff66; text-decoration:underline; }
 
 @media (min-width:640px){
@@ -185,6 +198,8 @@ main{
     justify-content:space-between;
     align-items:center;
   }
+
+  .footer-links{ justify-content:flex-end; }
 }
 
 a{ color:var(--link); }
